@@ -11,6 +11,6 @@ export const useStyles = makeStyles((theme: Theme) =>
 		headerTitle: {fontWeight: 'bold', fontSize: '1.75em'},
 
 		body: {flex: 1, background: '#eee'},
-		page: {margin: '0 auto', maxWidth: 1080},
+		page: {margin: '0 auto', maxWidth: 1080, padding: 20},
 	}),
 );

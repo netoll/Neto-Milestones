@@ -3,7 +3,7 @@
 import React from 'react';
 import {LayoutAppHeader} from 'src/mui-views/app/LayoutAppHeader';
 import {useLocalizedResourcesFromContext} from 'src/mui-lib/hooks/useLanguage';
-import {mock} from '../assets/mock';
+import {mock, mockRoadmaps} from '../assets/mock';
 import {toMarkdown} from '../milestones/to-md';
 import {ViewTimeliner} from '../views/ViewTimeliner';
 import {ViewRowBasedFlows} from '../views/ViewRowBasedFlows';
@@ -13,14 +13,18 @@ import {useStyles} from './styles';
 
 interface IProps {}
 
-interface IState {}
-
 export const AppHome = React.memo<IProps>(() => {
 	const cls = useStyles();
 	const R = useLocalizedResourcesFromContext(RB);
 
 	const renderPageBody = () => (
 		<div className={cls.page}>
+
+			<div style={{height: 16}}/>
+			<ViewTimeliner
+				step={Math.floor(mockRoadmaps.sections.length / 2)} entries={mockRoadmaps.sections}
+				desc={true} expand={true}
+			/>
 
 			<div style={{height: 16}}/>
 			<ViewTimeliner step={Math.floor(mock.sections.length / 2)} entries={mock.sections}/>

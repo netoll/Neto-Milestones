@@ -42,3 +42,12 @@ const demo = newMilestone('A Demo Milestone', [
 ], '');
 
 export const mock = demo;
+
+export const mockRoadmaps = newMilestone('大方向', [
+	nextMileEntry('产业化', '2023年', '- 查漏补缺\n- 几个成熟稳定的商业模式'),
+	nextMileEntry('商业化', '2022年', '- 商业化止损及盈利'),
+	nextMileEntry('正式化', '2021年', '- 建立工作室并探索团队的存在形式\n- 商业模式初步探索'),
+	nextMileEntry('起步', '2020年', '- 基本基础设施的搭建\n- 技术的进一步积累\n- 产品的完善及试水\n\t- 应用的基本产品化\n\t- 搭建基本管理后台\n- 产品的方向与未来\n\t- 域名/文档\n\t- 科学的理论\n- 项目与产品起步与探索摸索\n'),
+	nextMileEntry('探索', '2019年', '- 技术栈(框架)的摸索与升级\n- 初步细化产品设计\n- 初步确定产品方向\n\t- 闭门造车 vs 行进中摸索\n\t- 确定原有的产品想法，等待下一步的摸索\n'),
+	nextMileEntry('尝试', '2018年', '- 挑战自我失败\n\t- 产品开发进度感人\n\t- 各方面均积累不足\n'),
+]);
